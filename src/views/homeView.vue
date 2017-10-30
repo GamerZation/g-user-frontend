@@ -1,12 +1,14 @@
 <template>
   <div id="homeContainer">
-    <slide-show-comp></slide-show-comp>
-
+    <slide-show-component></slide-show-component>
+    <game-card-component style="margin-top:20px;"></game-card-component>
   </div>
 </template>
 
 <script>
-import slideShowComp from "./../components/homeComponents/slideShow"
+import slideShowComponent from "./../components/homeComponents/slideShow"
+import gameCardComponent from "./../components/homeComponents/gameCard"
+
 export default {
   name: 'homeContainer',
   data(){
@@ -15,7 +17,8 @@ export default {
     }
   },
   components: {
-    slideShowComp
+    slideShowComponent,
+    gameCardComponent
   }
 }
 </script>

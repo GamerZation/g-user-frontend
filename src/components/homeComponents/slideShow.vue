@@ -30,7 +30,6 @@ export default {
 <style >
   #slideShowContainer{
     width: 100%;
-    height: 100%;
   }
   .image-container {
     background-repeat: no-repeat;

@@ -80,7 +80,8 @@ body {
   background-color: whitesmoke;
 }
 .aside {
-  max-width: 100px;
+  min-width: 90px;
+  max-width: 90px;
   flex: auto;
   background-color: rgb(24,28,44);
 }

@@ -31,13 +31,14 @@ export default {
 
 <style scoped>
 #gameCardContainer{
-  height: auto;
+  height: 400px;
 }
 .gamesFlexParent{
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  height: 300px;
+  height: 400px;
 }
 
 .gamesFlexItem{

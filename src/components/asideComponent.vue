@@ -1,9 +1,13 @@
 <template>
   <div class="asideContainer">
-    <a><span style="font-size:2.5rem;color:red;font-weight:bold;">Z</span></a>
     <ul>
       <li>
-        <div class="side-menu-item" @click="navigate('Home')">
+        <div class="side-menu-toggle">
+          <span>Z</span>
+        </div>
+      </li>
+      <li>
+        <div class="side-menu-item">
           <i class="fa fa-home"></i>
           <span>Home</span>
         </div>
@@ -11,49 +15,31 @@
       <li>
         <div class="side-menu-item">
           <i class="fa fa-gamepad" aria-hidden="true"></i>
-          <a >GAMES</a>
-        </div>
-      </li>
-      <li>
-        <div class="side-menu-item">
-          <i class="fa fa-commenting" aria-hidden="true"></i>
-          <a >CHATTING</a>
-        </div>
-      </li>
-      <li>
-        <div class="side-menu-item">
-          <i class="fa fa-trophy" aria-hidden="true"></i>
-          <a >EVENTS</a>
+          <span>GAMES</span>
         </div>
       </li>
       <li>
         <div class="side-menu-item">
           <i class="fa fa-users" aria-hidden="true"></i>
-          <a >TEAM</a>
+          <span>TEAMS</span>
         </div>
       </li>
       <li>
         <div class="side-menu-item">
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <a >ACTIVITY</a>
+          <i class="fa fa-trophy" aria-hidden="true"></i>
+          <span>EVENTS</span>
         </div>
       </li>
       <li>
         <div class="side-menu-item">
           <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-          <a >NEWS</a>
+          <span>NEWS</span>
         </div>
       </li>
       <li>
-        <div class="side-menu-item">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          <a >SHOP</a>
-        </div>
-      </li>
-      <li>
-        <div class="side-menu-item">
+        <div class="side-menu-item item-bottom">
           <i class="fa fa-headphones" aria-hidden="true"></i>
-          <a >SUPPORT</a>
+          <span>SUPPORT</span>
         </div>
       </li>
     </ul>
@@ -78,14 +64,12 @@ export default {
 <style scoped>
 
 ul {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: .8rem;
-    list-style-type: none;
-    padding: 0;
+  font-weight: bold;
+  font-size: .8rem;
+  list-style-type: none;
+  padding: 0;
 }
 li {
-    margin-top: 10px;
     display: block;
     color: white;
     text-decoration: none;
@@ -100,11 +84,28 @@ i{
 .side-menu-item {
   padding-top: 10px;
   width: 100%;
-  height: 60px;
+  height: 80px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
+.item-bottom {
 
+}
+.side-menu-toggle {
+  width: 100%;
+  height: 80px;
+  line-height: 2;
+  font-size: 3rem;
+  color : #ed1c24;
+  font-family: 'Devanagari sangam mn';
+}
+.side-menu-toggle:hover {
+  cursor: pointer;
+}
 .side-menu-item:hover {
   cursor:pointer;
+  border-left: 4px solid #0057ff;
   background-color: rgb(37,41,57);
 }
 </style>

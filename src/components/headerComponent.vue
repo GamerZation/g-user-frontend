@@ -1,27 +1,18 @@
-<template >
+<template>
   <div id="headerContainer">
-    <div class="blur-div">
-
-    </div>
     <div class="left-flex">
+      <div class="brand-name">
+        <!-- <span class="brand-name-span">gamer<span style="color:red;">Z</span>ation</span> -->
+         <b-button class="quick-match-button">MATCH MAKE</b-button>
+      </div>
     </div>
     <div class="right-flex">
-      <div class="nav-bar-icon">
-        <div class="icon">
-        </div>
+      <div class="login-buttons">
+         <b-button class="register-button">REGISTER</b-button>
+         <b-button class="login-button">LOGIN</b-button>
       </div>
-      <div class="nav-bar-salute" style="color:white;">
-        <span>Hello </span><span>Raed</span>
-      </div>
-      <div class="icons">
-        <i class="fa fa-bell-o"></i>
-      </div>
-      <div class="icons">
-        <i class="fa fa-commenting-o"></i>
-      </div>
-      <div class="icons">
-        <i class="fa fa-cog"></i>
-      </div>
+    </div>
+    <div class="blur-div">
     </div>
   </div>
 </template>
@@ -39,23 +30,22 @@ export default {
     flex-direction: row;
     justify-content: flex-start ;
     height: -webkit-fill-available;
-    background-color: rgba(76,90,105,0.7);
+    background-color: rgba(34, 42, 57,0.7);
   }
   .blur-div {
     height: 100%;
     width: 100%;
+    z-index: -1;
     position: absolute;
-    filter : blur(99px)
+    filter : blur(99px);
   }
   .left-flex {
     align-items: center;
-    padding: 10px;
     flex: 1;
     display: flex;
     justify-content: flex-start;
     text-align: center;
-    line-height: 2.5;
-    font-size: 1.3rem;
+    line-height: 2;
   }
   .right-flex {
     align-items: center;
@@ -64,9 +54,7 @@ export default {
     display: flex;
     justify-content: flex-end;
     text-align: center;
-    line-height: 2.5;
     font-size: 1.3rem;
-
   }
   .nav-bar-salute {
     margin-right: 40px;
@@ -78,6 +66,44 @@ export default {
     width: 35px;
     margin: 10px;
     border-radius: 50px;
+  }
+  .register-button, .register-button:focus, .register-button:active {
+    background : linear-gradient(to top, rgba(77, 159, 178,1), rgba(25, 123, 170,1));
+    border: none;
+    border-radius: 1px;
+    height: 45px;
+    width: 140px;
+    font-size: 1rem;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+  }
+  .register-button:hover   {
+    background : linear-gradient(to top, rgba(77, 159, 178,1), rgba(25, 123, 170,1));
+    cursor: pointer;
+    box-shadow: none;
+  }
+  .login-button, .login-button:focus, .login-button:active {
+    height: 45px;
+    width: 140px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+    background: none !important;
+  }
+  .login-button:hover {
+    cursor: pointer;
+  }
+  .quick-match-button, .quick-match-button:focus, .quick-match-button:active {
+    background: none;
+    border: 0.5px solid rgba(77, 159, 178,1);
+    border-radius: 10px;
+    height: 35px;
+    width: 140px;
+    font-size:0.8rem;
+  }
+  .quick-match-button:hover   {
+    background : rgba(77, 159, 178,1);
+    border: none;
+    cursor: pointer;
   }
   .logout-icon {
     flex: 1;
@@ -97,17 +123,27 @@ export default {
   .log-out-button {
     display: flex;
   }
-
+  .brand-name-span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 40px;
+  }
+  .brand-name {
+    box-sizing: border-box;
+    padding: 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /*border: 9px solid white;*/
+    width: 200px;
+    height: 100%;
+    /*background-color: #ee4b44;*/
+  }
   .icons{
     flex: 1;
     height: 100%;
     max-width: 30px;
     justify-content: center;
     margin-right: 30px;
-  }
-
-  .fa{
-    color: rgba(255,255,255,.8);
-    font-size: 1.4rem;
   }
 </style>

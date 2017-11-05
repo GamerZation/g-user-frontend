@@ -68,7 +68,8 @@ export default {
     border-radius: 50px;
   }
   .register-button, .register-button:focus, .register-button:active {
-    background : linear-gradient(to top, rgba(77, 159, 178,1), rgba(25, 123, 170,1));
+    background : linear-gradient(to top, rgba(255, 39, 47,1), rgba(255, 73, 47,1));
+
     border: none;
     border-radius: 1px;
     height: 45px;
@@ -77,7 +78,9 @@ export default {
     box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
   }
   .register-button:hover   {
-    background : linear-gradient(to top, rgba(77, 159, 178,1), rgba(25, 123, 170,1));
+    -webkit-transition: 1s; /* Safari */
+    transition: 1s;
+    background : linear-gradient(to top, rgba(255, 39, 47,1), rgba(255, 73, 47,1));
     cursor: pointer;
     box-shadow: none;
   }

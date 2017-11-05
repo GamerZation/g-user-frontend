@@ -3,7 +3,7 @@
     <ul>
       <li>
         <div class="side-menu-toggle">
-          <span>Z</span>
+          <img src="../assets/z-logo.png" height="80" width="90">
         </div>
       </li>
       <li>
@@ -64,33 +64,28 @@ export default {
 <style scoped>
 
 ul {
-  font-weight: bold;
-  font-size: .8rem;
+  font-weight: 400;
   list-style-type: none;
   padding: 0;
 }
 li {
-    display: block;
-    color: white;
-    text-decoration: none;
+  display: block;
+  font-size: .8rem;
+  padding: 5px 0 0 5px;
+  color: white;
+  text-decoration: none;
 }
-li a {
-  font-size: .7rem;
-}
-i{
+i {
   min-width: 100%;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 .side-menu-item {
   padding-top: 10px;
   width: 100%;
-  height: 80px;
+  height: 60px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-}
-.item-bottom {
-
 }
 .side-menu-toggle {
   width: 100%;
@@ -101,7 +96,7 @@ i{
   font-family: 'Devanagari sangam mn';
 }
 .side-menu-toggle:hover {
-  cursor: pointer;
+  cursor: pointer;  
 }
 .side-menu-item:hover {
   cursor:pointer;

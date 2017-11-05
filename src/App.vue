@@ -38,7 +38,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  overflow: hidden;
   height: 100%;
 }
 body, html {
@@ -49,7 +48,7 @@ body, html {
 .main-container {
   position: relative;
   display: flex;
-  overflow: hidden;
+  overflow: hin;
   flex-direction: row;
   min-height: 100%;
 }
@@ -72,7 +71,7 @@ body, html {
 }
 .main {
   margin-top: -80px;
-  height: 100%;
+  min-height: 100%;
   overflow: scroll;
   flex: auto;
 }

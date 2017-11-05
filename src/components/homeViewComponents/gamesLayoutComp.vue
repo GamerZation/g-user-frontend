@@ -14,4 +14,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+  #GamesLayoutComp {
+    height: 100%;
+    min-height: 500px;
+  }
 </style>

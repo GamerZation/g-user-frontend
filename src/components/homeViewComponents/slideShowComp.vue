@@ -21,6 +21,7 @@ export default {
   #slideShowContainer {
     background-color: black;
     height: 80%;
+    min-height: 500px;
   }
   #slideShowContainer >>> .el-carousel__container  {
     height: 100% !important;
